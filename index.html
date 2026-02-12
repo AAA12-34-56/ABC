@@ -150,6 +150,45 @@ h2{
     font-size: clamp(18px, 3.5vw, 28px);
 }
 
+.compare{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.compare-box{
+    flex:1;
+    min-width:250px;
+    padding:15px;
+    border-radius:8px;
+}
+
+.compare-box h3{
+    margin-top:0;
+}
+
+.compare-box ul{
+    padding-left:20px;
+}
+
+.merit{
+    background:#e8f5e9;
+    border-left:5px solid #2e7d32;
+}
+
+.demerit{
+    background:#fff3e0;
+    border-left:5px solid #ef6c00;
+}
+
+/* スマホ */
+@media(max-width:600px){
+    .compare{
+        flex-direction:column;
+    }
+}
+
+
 
 </style>
 </head>
@@ -207,6 +246,37 @@ h2{
 </p>
 </div>
 </section>
+
+<section>
+<h2>🌏 従来の土砂災害対策との違い</h2>
+
+<div class="card compare">
+
+<div class="compare-box merit">
+<h3>✅ メリット</h3>
+<ul>
+<li>自然の土壌構造を活かして地盤を強化できる</li>
+<li>景観や植生を保ちやすい</li>
+<li>環境負荷が比較的低い</li>
+<li>施工資材を抑えられる可能性</li>
+<li>維持管理コスト削減が期待できる</li>
+</ul>
+</div>
+
+<div class="compare-box demerit">
+<h3>⚠ デメリット</h3>
+<ul>
+<li>研究段階で実用例が少ない</li>
+<li>効果が出るまで時間が必要</li>
+<li>環境条件の影響を受けやすい</li>
+<li>大規模災害への検証が不足</li>
+<li>微生物管理が必要</li>
+</ul>
+</div>
+
+</div>
+</section>
+
 
 <section>
 <h2>💡 支援金の使い道</h2>
@@ -302,3 +372,4 @@ updateProgress();
 
 </body>
 </html>
+
