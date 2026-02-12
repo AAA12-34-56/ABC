@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>微生物で山を守るプロジェクト</title>
+
+<style>
+body{
+    font-family: "Yu Gothic", sans-serif;
+    margin:0;
+    background:#f4f7f6;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#2e7d32,#66bb6a);
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+section{
+    padding:40px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h2{
+    border-left:6px solid #2e7d32;
+    padding-left:10px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+.highlight{
+    font-size:1.2em;
+    font-weight:bold;
+    color:#2e7d32;
+}
+
+.progress{
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:10px;
+}
+
+.progress-bar{
+    width:0%;
+    height:20px;
+    background:#4caf50;
+    transition:0.4s;
+}
+
+button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:10px;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+footer{
+    background:#263238;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+#goalOverlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:50px;
+    z-index:9999;
+    opacity:0;
+    pointer-events:none;
+    transition:0.5s;
+}
+
+#goalOverlay.show{
+    opacity:1;
+}
+/* ===== スマホ対応 ===== */
+@media screen and (max-width: 600px){
+
+header h1{
+    font-size: 26px;
+}
+
+header p{
+    font-size: 16px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.card{
+    font-size: 15px;
+    padding:15px;
+}
+
+.highlight{
+    font-size: 16px;
+}
+
+button{
+    width:100%;
+    margin-top:10px;
+    font-size:16px;
+}
+
+#goalOverlay{
+    font-size:32px;
+}
+
+}
+
+body{
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+header h1{
+    font-size: clamp(24px, 5vw, 40px);
+}
+
+h2{
+    font-size: clamp(18px, 3.5vw, 28px);
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>微生物で山を守るプロジェクト</h1>
+<p>微生物誘起炭酸カルシウム沈殿（MICP）で土砂災害を防ぐ</p>
+</header>
+
+<section>
+<h2>🌏 プロジェクト概要</h2>
+<div class="card">
+<p>
+近年、夏の気象状況の悪化が原因の豪雨や台風が増加し、日本各地で土砂災害が頻発しています。本プロジェクトでは、自然環境への影響を最小限に抑えながら、山や斜面の崩壊を防ぐ新しい防災技術の研究・普及を目指しています。
+</p>
+
+<p>
+特に私たちは、微生物の働きを利用して地盤を強化する技術に注目しました。この技術は従来のコンクリートによる対策とは異なり、自然の土壌や景観を保ちながら災害リスクを低減できる可能性があります。
+</p>
+
+<p class="highlight">
+持続可能で環境と共存できる防災対策の実現を目標としています。
+</p>
+</div>
+</section>
+
+<section>
+<h2>🧫 技術の仕組み</h2>
+<div class="card">
+<p>
+本プロジェクトで活用している技術は、「微生物誘起炭酸カルシウム沈殿（MICP）」と呼ばれるものです。これは特定の微生物が活動する際に炭酸カルシウムを生成し、その物質が土粒子同士を結び付けることで、土壌を自然に固める仕組みです。
+</p>
+
+<p>
+この技術の特徴は、コンクリートのように人工物で地面を覆うのではなく、土そのものの構造を強化できる点にあります。そのため、山の植生や景観を維持しながら、斜面の安定性を高めることが可能になります。また、環境負荷が比較的低いことも大きな利点です。
+</p>
+</div>
+</section>
+
+<section>
+<h2>🏔 なぜ必要？</h2>
+<div class="card">
+<p>
+日本は地形的に山が多く、近年の気候変動の影響により、短時間で大量の雨が降るケースが増えています。その結果、土砂崩れや斜面崩壊の発生件数は増加傾向にあります。
+</p>
+
+<p>
+従来の防災対策ではコンクリート構造物が多く使用されてきましたが、景観の破壊や自然環境への影響、施工コストなどの課題があります。将来的に持続可能な防災を実現するためには、自然と共存できる新しい技術の開発が重要です。
+</p>
+
+<p>
+微生物を活用した地盤強化技術は、こうした課題を解決できる可能性を持つ次世代の防災手段として期待されています。
+</p>
+</div>
+</section>
+
+<section>
+<h2>💡 支援金の使い道</h2>
+<div class="card">
+<p>
+皆様からいただいた支援金は、本技術の研究と社会実装に向けて大切に活用させていただきます。主な用途は以下の通りです。
+</p>
+
+<ul>
+<li>実証実験フィールドの整備</li>
+<li>微生物の培養や管理に必要な設備の開発</li>
+<li>施工方法や地盤強化効果の研究</li>
+<li>土砂災害対策に関するデータ収集および分析</li>
+</ul>
+
+<p>
+これらの取り組みを通じて、より安全で環境に配慮した防災技術の確立を目指します。
+</p>
+</div>
+</section>
+
+<section>
+<h2>📊 現在の寄付達成状況</h2>
+<div class="card">
+
+<p>目標金額：<span id="goal">100</span>回</p>
+<p>現在：<span id="current">0</span>回</p>
+<p>達成率：<span id="percent">0</span>%</p>
+
+<div class="progress">
+<div class="progress-bar" id="progressBar"></div>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>🤝 寄付する</h2>
+<div class="card">
+
+<button onclick="donate(1)">1回寄付</button>
+<button onclick="donate(10)">10回寄付</button>
+
+</div>
+</section>
+
+<div id="goalOverlay">
+    <h1>🎉 目標達成！ 🎉</h1>
+</div>
+
+<script>
+function updateProgress(){
+    const goal = Number(document.getElementById("goal").textContent);
+    const current = Number(document.getElementById("current").textContent);
+
+    let percent = (current / goal) * 100;
+    if(percent > 100) percent = 100;
+
+    document.getElementById("progressBar").style.width = percent + "%";
+    document.getElementById("percent").textContent = percent.toFixed(1);
+}
+
+function showGoalMessage(){
+    const overlay = document.getElementById("goalOverlay");
+
+    overlay.classList.add("show");
+
+    setTimeout(()=>{
+        overlay.classList.remove("show");
+    },3000);
+}
+
+function donate(amount){
+    let current = Number(document.getElementById("current").textContent);
+    const goal = Number(document.getElementById("goal").textContent);
+
+    current += amount;
+    document.getElementById("current").textContent = current;
+
+    updateProgress();
+
+    if(current >= goal){
+        showGoalMessage();
+    }
+}
+
+updateProgress();
+</script>
+
+<footer>
+<p>微生物で山を守るプロジェクト1-6 26</p>
+</footer>
+
+</body>
+</html>
